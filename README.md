@@ -110,13 +110,6 @@ model = DEYO("init.pt")
 model.train(data = "coco.yaml", epochs = 72, lr0 = 0.0001, lrf = 0.0001, weight_decay = 0.0001, optimizer = 'AdamW', warmup_epochs = 0, mosaic = 0, scale = 0.9, mixup = 0.15, copy_paste = 0.3, freeze = 22, device = '0, 1, 2, 3, 4, 5, 6, 7')
 ```
 
-## Export
-
-```python
-model = DEYO("deyov1.5e.pt")
-model.export(format='engine')
-```
-
 ## Benchmark
 You can follow the method we used in  [DEYO](https://github.com/ouyanghaodong/DEYO).
 
