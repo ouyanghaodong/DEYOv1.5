@@ -20,9 +20,9 @@ We employ step-by-step training and have replaced the Hungarian Matching with TA
 | YOLOv9-C  | -- | ✘ | 52.9 | 69.8 | 25.3 | 102.7 | --  | 
 | YOLOv9-E  | -- | ✔ | 54.6 | 71.4 | 57.4 | 189.5 | 65 |
 | YOLOv9-E  | -- | ✘ | 55.1 | 72.2 | 57.4 | 189.5 | --  |
-| [DEYOv1.5-N](https://github.com/ouyanghaodong/assets/blob/main/releases/download/v0.0.0/deyov1.5-n.pt) | 144 | ✔ | 39.5 | 55.7 | 3.1  | 7.2   | 467 | 
-| [DEYOv1.5-C](https://github.com/ouyanghaodong/assets/blob/main/releases/download/v0.0.0/deyov1.5-c.pt) | 72  | ✔ | 52.6 | 69.5 | 26.6 | 87.4  | 135 |
-| [DEYOv1.5-E](https://github.com/ouyanghaodong/assets/blob/main/releases/download/v0.0.0/deyov1.5-e.pt) | 72  | ✔ | 55.0 | 71.9 | 58.7 | 174.2 | 63 |
+| [DEYOv1.5-N](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5n.pt) | 144 | ✔ | 39.5 | 55.7 | 3.1  | 7.2   | 467 | 
+| [DEYOv1.5-C](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5c.pt) | 72  | ✔ | 52.6 | 69.5 | 26.6 | 87.4  | 135 |
+| [DEYOv1.5-E](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5e.pt) | 72  | ✔ | 55.0 | 71.9 | 58.7 | 174.2 | 63 |
 
 ##### Note: We are using the YOLOv9 implemented by ultralytics, which has a slight difference in accuracy compared to the original version.
 
