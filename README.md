@@ -14,15 +14,17 @@ We employ step-by-step training and have replaced the Hungarian Matching with TA
 ## Models
 | Model | Epoch | End-to-End | $AP^{val}$ | $AP^{val}_{50}$ | Params(M) | FLOPs(G) | T4 TRT FP16(FPS) |
 |:------|:-----:|:-----------:|:----------:|:---------------:|:---------:|:--------:|:---------------:|
-| YOLOv10-N | -- | ✔ | 38.5 | 53.8 | 2.3  | 6.7   | 503 | 
+| YOLOv8-N | --  | ✔ | --   | --   | 3.2  | 8.7   | 554 | 
+| YOLOv10-N | -- | ✔ | 38.5 | 53.8 | 2.3  | 6.7   | 538 | 
 | YOLOv10-N | -- | ✘ | 39.4 | 55.0 | 2.3  | 6.7   | --  |
 | YOLOv9-C  | -- | ✔ | 51.9 | 68.7 | 25.3 | 102.7 | 155 |
 | YOLOv9-C  | -- | ✘ | 52.9 | 69.8 | 25.3 | 102.7 | --  | 
-| YOLOv9-E  | -- | ✔ | 54.6 | 71.4 | 57.4 | 189.5 | 65 |
+| YOLOv9-E  | -- | ✔ | 54.6 | 71.4 | 57.4 | 189.5 | 65  |
 | YOLOv9-E  | -- | ✘ | 55.1 | 72.2 | 57.4 | 189.5 | --  |
-| [DEYOv1.5-N](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5n.pt) | 144 | ✔ | 39.5 | 55.7 | 3.1  | 7.2   | 467 | 
+| DEYO-tiny | 96 | ✔ | 37.6 | 52.8 | 4    | 8     | 487 |
+| [DEYOv1.5-N](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5n.pt) | 144 | ✔ | 39.5 | 55.7 | 3.1  | 7.2   | 501 | 
 | [DEYOv1.5-C](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5c.pt) | 72  | ✔ | 52.6 | 69.5 | 26.6 | 87.4  | 135 |
-| [DEYOv1.5-E](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5e.pt) | 72  | ✔ | 55.0 | 71.9 | 58.7 | 174.2 | 63 |
+| [DEYOv1.5-E](https://github.com/ouyanghaodong/DEYOv1.5/releases/download/v0.1/deyov1.5e.pt) | 72  | ✔ | 55.0 | 71.9 | 58.7 | 174.2 | 63  |
 
 ##### Note: We are using the YOLOv9 implemented by ultralytics, which has a slight difference in accuracy compared to the original version.
 
