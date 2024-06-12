@@ -38,6 +38,8 @@ pip install ultralytics
 #### Frist Training Stage
 Unlike YOLOv10, DEYO selects the backbone and neck most suitable for the one-to-many branch, rather than those most suitable for the one-to-one branch, achieving true alignment with the accuracy of the one-to-many branch.
 
+Replace `ultralytics/engine/trainer.py` with our modified `trainer.py`
+
 ```python
 from ultralytics import YOLO
 
