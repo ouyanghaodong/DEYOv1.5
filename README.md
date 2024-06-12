@@ -66,6 +66,8 @@ model.train(data = "coco.yaml", epochs = 500, scale = 0.9, mixup = 0.15, copy_pa
 
 Please note that if you directly adopt a model pre-trained on the COCO dataset, you may not achieve the best results, as we have set the one-to-many branch to a frozen state, which means the one-to-many branch will not undergo further fine-tuning optimization based on your dataset. You will need to fine-tune the model pre-trained on the COCO dataset during the First Training Stage.
 
+If you have made changes to the `ultralytics/engine/trainer.py` during the frist training stage, please revert it.
+
 ```python
 from ultralytics import DEYO
 
