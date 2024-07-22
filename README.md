@@ -90,7 +90,7 @@ model = DEYO("cfg/models/deyo/deyov1.5e.yaml")
 model.load("best-e.pt")
 
 # Use the model
-model.train(data = "coco.yaml", epochs = 72, lr0 = 0.0001, lrf = 0.0001, weight_decay = 0.0001, optimizer = 'AdamW', warmup_epochs = 0, mosaic = 0, scale = 0.9, mixup = 0.15, copy_paste = 0.3, freeze = 22)
+model.train(data = "coco.yaml", epochs = 72, lr0 = 0.0001, lrf = 0.0001, weight_decay = 0.0001, optimizer = 'AdamW', warmup_epochs = 0, mosaic = 0, scale = 0.9, mixup = 0.15, copy_paste = 0.3, freeze = 42)
 ```
 
 ## Multi GPUs
@@ -113,7 +113,7 @@ torch.save({"epoch":-1, "model": model.model.half(), "optimizer":None}, "init.pt
 model = DEYO("init.pt")
 
 # Use the model
-model.train(data = "coco.yaml", epochs = 72, lr0 = 0.0001, lrf = 0.0001, weight_decay = 0.0001, optimizer = 'AdamW', warmup_epochs = 0, mosaic = 0, scale = 0.9, mixup = 0.15, copy_paste = 0.3, freeze = 22, device = '0, 1, 2, 3, 4, 5, 6, 7')
+model.train(data = "coco.yaml", epochs = 72, lr0 = 0.0001, lrf = 0.0001, weight_decay = 0.0001, optimizer = 'AdamW', warmup_epochs = 0, mosaic = 0, scale = 0.9, mixup = 0.15, copy_paste = 0.3, freeze = 42, device = '0, 1, 2, 3, 4, 5, 6, 7')
 ```
 
 ## Benchmark
